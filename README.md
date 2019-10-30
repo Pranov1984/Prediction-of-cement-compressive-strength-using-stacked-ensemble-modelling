@@ -5,10 +5,17 @@ The actual concrete compressive strength (MPa) for a given mixture under aspecif
 
 Summary of steps taken and performance achieved:
 Multiple models with different levels of complexity were attempted. The dependent and independent variables seem to have a nonlinear relationship as the performance of models improved with increasing complexity. MAPE was selected as the evaluation metric.Regularization, feature selection and hyper-parameter tuning was employed to improve the model performance. The models attempted are
+
 Linear Regression with no regularization
+
 Ridge and Lasso
+
 Gradient Boosting
+
 Random Forest
+
 XGboost
+
 Support Vector Machine
+
 Stacking - ensemble of the best estimators of the above tuned models with a meta regressor (i.e. Ridge) which gave the best result (MAPE of less than 10)
